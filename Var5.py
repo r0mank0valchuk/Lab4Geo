@@ -50,7 +50,6 @@ def display():
     glMatrixMode(GL_MODELVIEW)
     glLoadIdentity()
 
-    # Напрямок - сферичні координати перетворюємо в декартові
     camera_x = radius * math.cos(math.radians(pitch)) * math.sin(math.radians(yaw))
     camera_y = radius * math.sin(math.radians(pitch))
     camera_z = radius * math.cos(math.radians(pitch)) * math.cos(math.radians(yaw))
